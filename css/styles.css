@@ -1,0 +1,124 @@
+@font-face {
+  font-family: khula-regular;
+  src: url("fonts/khula/khula-regular.otf");
+}
+
+@font-face {
+  font-family: khula-light;
+  src: url("fonts/khula/khula-light.otf");
+}
+
+@font-face {
+  font-family: khula-semibold;
+  src: url("fonts/khula/khula-semibold.otf");
+}
+
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 400;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 150;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 5px;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 100;
+  margin: 5px;
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 5px;
+}
+
+img {
+  width: 10%;
+  margin-right: 20px;
+}
+
+body, html {
+  background-color: white;
+  color: #f1f1f1;
+  font-family: khula-regular, sans-serif;
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+
+/***************************** CLASS SELECTORS *****************************/
+.home {
+  background-color: #839B97;
+  color: #f1f1f1;
+  /*color: #575757;*/
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+}
+
+.education {
+  background-color: #F0F0F0;
+  color: #575757;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+
+/****************************** ID SELECTORS ******************************/
+/* ID's begin with a # */
+#right_justified {
+  align-items: flex-start;
+}
+
+#book {
+  width: 50%;
+  margin: 10px;
+  margin-top: 25px;
+}
