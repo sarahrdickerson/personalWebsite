@@ -15,32 +15,32 @@
 
 
 h1 {
-  font-size: 5vw;
+  font-size: 5em;
   font-weight: 400;
   margin: 0px;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 3em;
   font-weight: 150;
   margin-bottom: 40px;
 }
 
 h3 {
-  font-size: 1.75vw;
+  font-size: 1.75em;
   font-weight: 100;
   margin: 0px;
   margin-bottom: 3px;
 }
 
 h4 {
-  font-size: 1.35vw;
+  font-size: 1.35em;
   font-weight: 100;
   margin: 0px;
 }
 
 h5 {
-  font-size: 1.25vw;
+  font-size: 1.25em;
   font-weight: 100;
   margin: 0px;
 }
@@ -48,18 +48,18 @@ h5 {
 
 p {
   margin: 0px;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 ul {
   list-style-type: circle;
   margin: 0px;
   padding-left: 25px;
-  font-size: 1.2vw;
+  font-size: 1.1em;
 }
 
 a{
-
+  padding: 6px;
 }
 
 body, html {
@@ -79,7 +79,7 @@ body, html {
 
 .nav_item {
   font-family: khula-light;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   float: right;
   color: #575757;
   text-decoration: none;
@@ -254,6 +254,22 @@ body, html {
   padding-right: 25px;
 }
 
+.footer {
+  padding: 20px;
+}
+
+.footer_text {
+  text-decoration: none;
+  font-family: khula-regular;
+  font-size: 1em;
+  color: #575757;
+  transition: .5s ;
+}
+
+.footer_text:hover {
+  color: #969696;
+}
+
 
 /****************************** ID SELECTORS ******************************/
 #navigation {
@@ -307,6 +323,15 @@ body, html {
   flex-wrap: wrap;
   align-content: center;
   padding: 50px;
+}
+
+#footer {
+  background-color: #F0F0F0;
+  color: #575757;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 #right_justified {
