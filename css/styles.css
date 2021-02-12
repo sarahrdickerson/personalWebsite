@@ -207,6 +207,24 @@ body, html {
   font-size: 1em;
 }
 
+.orange_underline {
+  text-decoration: underline;
+  text-decoration-color: #BF5700;
+}
+
+.proj_spot {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 3%;
+  display: none;
+}
+
+.proj_image {
+  width: 350px;
+  height: 350px;
+  border-radius: 6px;
+}
 
 /****************************** ID SELECTORS ******************************/
 #navigation {
