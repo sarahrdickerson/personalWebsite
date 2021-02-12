@@ -1,3 +1,6 @@
+// Typewriter created by Geoff Graham
+// source: https://css-tricks.com/snippets/css/typewriter-effect/
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -56,4 +59,14 @@ var TxtType = function(el, toRotate, period) {
     };
 
 
-Resources
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// by W3 Schools
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navigation").style.top = "0";
+  } else {
+    document.getElementById("navigation").style.top = "-100px";
+  }
+}

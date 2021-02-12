@@ -57,6 +57,10 @@ ul {
   font-size: 1.2vw;
 }
 
+a{
+
+}
+
 body, html {
   background-color: white;
   color: #f1f1f1;
@@ -70,44 +74,41 @@ body, html {
 
 
 /***************************** CLASS SELECTORS *****************************/
-.home {
-  background-color: #839B97;
-  color: #f1f1f1;
-  /*color: #575757;*/
 
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 50px;
+
+.nav_item {
+  font-family: khula-light;
+  font-size: 1.5vw;
+  float: right;
+  color: #575757;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  display: block;
 }
 
-.education {
-  background-color: #F0F0F0;
-  color: #575757;
 
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 50px;
+.nav_item:hover {
+	color: #2a2d34;
+	transition: 0.5s;
 }
 
-.projects {
-  background-color: #FFFFFF;
-  color: #575757;
 
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 50px;
+.nav_item:hover:after {
+    transform: scaleX(1);
+}
+
+.nav_item::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #839B97;
+    transform: scaleX(0);
+    transition: 350ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.nav_item:first-child {
+  float: left;
 }
 
 .arrow
@@ -123,6 +124,10 @@ body, html {
    */
   background-image: url("../images/arrow.png");
   background-size: contain;
+}
+
+.arrow:hover {
+  -webkit-animation-play-state: paused;
 }
 
 .bounce {
@@ -204,7 +209,59 @@ body, html {
 
 
 /****************************** ID SELECTORS ******************************/
-/* ID's begin with a # */
+#navigation {
+  position: fixed;
+  display: block;
+  left: 0%;
+  right: 0%;
+  top: -100px;
+  background-color: white;
+  transition: top 0.4s;
+  box-shadow: 2px 2px 5px #aaaaaa;
+  z-index: 1;
+
+}
+
+#home {
+  background-color: #839B97;
+  color: #f1f1f1;
+  /*color: #575757;*/
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+}
+
+#education {
+  background-color: #F0F0F0;
+  color: #575757;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+}
+
+#projects {
+  background-color: #FFFFFF;
+  color: #575757;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+}
+
 #right_justified {
   align-items: flex-start;
 }
